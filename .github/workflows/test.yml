@@ -28,3 +28,10 @@ jobs:
                   npm i
                   npm run lint
                   npm run test:remote
+    test2:
+        runs-on: ubuntu-latest
+
+        steps:
+            - run: touch a.txt
+            - run: echo > a.txt
+            - run: cat a.txt

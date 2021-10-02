@@ -4,7 +4,7 @@
  */
 
 const AipContentCensorClient = require('baidu-aip-sdk').contentCensor
-const { baiduCloudCensorConf } = require('../config/index.js')
+const { baiduCloudCensorConf } = require('../config/index')
 const { mailAlarm } = require('../alarm/index')
 
 // 实例化客户端

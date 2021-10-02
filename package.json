@@ -21,7 +21,7 @@
         "url": "git+https://github.com/imooc-lego/biz-editor-server.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "", 
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/imooc-lego/biz-editor-server/issues"
@@ -43,6 +43,18 @@
         "nodemon": "^1.8.1",
         "prettier": "^2.1.1",
         "release-it": "^14.2.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "npm run lint",
+            "npm run test:local"
+        ]
     },
     "dependencies": {
         "ajv": "^6.12.5",

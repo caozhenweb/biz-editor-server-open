@@ -8,7 +8,7 @@ module.exports = {
     mongodbConf: {
         host: 'localhost',
         port: '27017',
-        dbName: 'testdb',
+        dbName: 'imooc-first',
     },
 
     // redis 连接配置
@@ -21,9 +21,9 @@ module.exports = {
     mysqlConf: {
         host: 'localhost',
         user: 'root',
-        password: 'xxx',
+        password: 'test123456',
         port: '3306',
-        database: 'testdb',
+        database: 'shop',
     },
 
     // cors origin
